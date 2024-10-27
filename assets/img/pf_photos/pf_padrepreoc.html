@@ -1,0 +1,1198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- Map CSS -->
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css">
+    
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/css/libs.bundle.css">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.bundle.css">
+    
+    <!-- Title -->
+    <title>Landkit</title>
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-body-secondary mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- First name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-body-secondary">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-body-secondary">
+                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-body-secondary">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign up
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-body-secondary">
+                Already have an account? <a href="./signin-illustration.html">Log in</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-body-secondary">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-body-secondary">
+                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-body-secondary">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSigninVerticalPassword">
+                    Enter your password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign in
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-body-secondary">
+                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-body-secondary mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-primary mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+    
+     
+        <!-- Logo -->
+        <!-- <a class="navbar-brand" href="./index.html">  <img class="navbar-brand-img" src="./assets/img/brand.svg" alt="Profesión Feliz">  </a>  -->
+      
+        <!-- Logo -->
+    <a class="navbar-brand" href="./index.html">
+      <img class="navbar-brand-img" 
+           src="./assets/img/logopf.png" 
+           alt="Profesión Feliz"
+           style="height: 150px; width: auto;">
+    </a>
+        
+       
+    
+    
+    
+    
+        <!-- Botón hamburguesa para móvil -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Contenido del menú -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <!-- Menú principal -->
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pf-about.html">Somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pf-testimonios.html">Testimonios</a>
+            </li>
+        
+            <!-- Recursos (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarRecursos" 
+                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Recursos
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarRecursos">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./blog-showcase.html">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>                </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">Blog</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Artículos y recursos</p>
+                    </div>
+                  </a>
+                  <a class="list-group-item" href="./help-center.html">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle fill="#335EEA" opacity=".3" cx="12" cy="12" r="10"/><path d="M12 16a1 1 0 110 2 1 1 0 010-2zm-1.409-1.132v-1.659h1.26c1.596 0 2.751-1.218 2.751-2.814s-1.155-2.814-2.751-2.814c-1.617 0-2.73 1.218-2.73 2.814H7.336c0-2.52 1.974-4.473 4.515-4.473 2.541 0 4.536 1.953 4.536 4.473 0 2.52-1.995 4.473-4.536 4.473h-1.26z" fill="#335EEA"/></g></svg>                </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">FAQ</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Preguntas frecuentes</p>
+                    </div>
+                  </a>
+                  <a class="list-group-item" href="./blog-showcase.html">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M18 8h-2a1 1 0 010-2h2V4a1 1 0 012 0v2h2a1 1 0 010 2h-2v2a1 1 0 01-2 0V8zm-9 3a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M0 20.2C.389 15.426 4.263 13 8.984 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>                </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">Mini-Cursos</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Aprende con nosotros</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+        
+            <!-- Contacto (Dropdown) -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarContacto" 
+                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contacto
+              </a>
+              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarContacto">
+                <div class="list-group list-group-flush">
+                  <a class="list-group-item" href="./contact-alt.html">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle fill="#335EEA" opacity=".3" cx="12" cy="12" r="10"/><rect fill="#335EEA" x="11" y="10" width="2" height="7" rx="1"/><rect fill="#335EEA" x="11" y="7" width="2" height="2" rx="1"/></g></svg>                </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">Solicita información</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Conoce más sobre nuestros servicios</p>
+                    </div>
+                  </a>
+                  <a class="list-group-item" href="#modalSignupVertical" data-bs-toggle="modal">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z" fill="#335EEA" opacity=".3"/><path d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z" fill="#335EEA"/></g></svg>                </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">Newsletter SignUp</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Recibe nuestras actualizaciones</p>
+                    </div>
+                  </a>
+                  <a class="list-group-item" href="./contact.html">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" x="4" y="16" width="4" height="4" rx="1"/><rect fill="#335EEA" x="4" y="10" width="4" height="4" rx="1"/><rect fill="#335EEA" x="10" y="16" width="4" height="4" rx="1"/><rect fill="#335EEA" opacity=".3" x="10" y="10" width="4" height="4" rx="1"/><rect fill="#335EEA" x="4" y="4" width="4" height="4" rx="1"/><rect fill="#335EEA" x="16" y="16" width="4" height="4" rx="1"/></g></svg>                </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">Charlas Sign Up</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Inscríbete a nuestros eventos</p>
+                    </div>
+                  </a>
+                  <a class="list-group-item" href="./contact-alt.html">
+                    <div class="icon icon-sm text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M18 14a3 3 0 110-6 3 3 0 010 6zm-9-3a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M17.601 15c3.407.038 6.188 1.76 6.397 5.4.009.147 0 .6-.542.6H19.6c0-2.25-.744-4.328-1.999-6zm-17.6 5.2C.388 15.426 4.26 13 8.983 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>   <!--  charlas  devices/display-1  info  communication/sending-mail  -->
+                    </div>
+                    <div class="ms-4">
+                      <h6 class="fw-bold text-uppercase text-primary mb-0">Solicita reunión</h6>
+                      <p class="fs-sm text-gray-700 mb-0">Agenda una cita con nosotros</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        
+          <!-- Botón CTA -->
+          <a class="navbar-btn btn btn-sm btn-success lift ms-auto" href="./contact-alt.html">
+            Descubre tu vocación
+          </a>
+        </div>
+        
+    
+      </div>
+    </nav>
+
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="section position-relative py-12">
+      <!-- Shape blur background -->
+      <div class="shape shape-fluid-x shape-blur-1 text-gray-200">
+        <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M703.969 241.602l-.006-.003C716.081 262.97 723 287.677 723 314c0 68.917-47.425 126.757-111.42 142.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569 81.26 569 0 487.74 0 387.5c0-34.256 9.49-66.296 25.985-93.633l-.016.008L141.512 77.548C162.753 33.305 207.123 2.273 258.951.12l.008-.12h251.04l.003.01c41.848.557 78.081 24.378 96.356 59.12l.001-.005 97.61 182.477z" fill="currentColor"/></svg>      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image column -->
+          <div class="col-12 col-md-6 order-md-2">
+            <div class="img-skewed img-skewed-start mb-8">
+              <img src="assets/img/pf_img/ilust-padres-1.jpg" 
+                  class="screenshot img-fluid mw-md-130" 
+                  alt="Illustration"
+                  data-aos="img-skewed-item-start" 
+                  data-aos-delay="100">
+            </div>
+          </div>
+
+          <!-- Text column -->
+          <div class="col-12 col-md-6 order-md-1" data-aos="fade-up">
+            <h3 class="display-4 mb-4">
+              Se acerca la decisión . . . y lo sientes 
+              <span class="text-success" data-typed='{"strings": ["abrumado.", "confundido.", "ansioso.","inseguro."]}'>
+              </span>
+            </h3>
+            <h3 class="mb-0">Sabemos cómo acompañarlos......<br>
+              Elegir Carrera no es cuestión de completar cualquier Test.
+              Se necesitan Pruebas <strong>especializadas</strong>  y <strong>Acompañamiento</strong>  para redescubrir y validar,<br>
+               sus habilidades, su personalidad, su dominancia cerebral, 
+                y encontrar así esa Carrera que lo(a) haga Feliz.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="section py-12">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <span class="badge rounded-pill text-bg-success-subtle mb-4">
+              <span class="h6 text-uppercase">tips</span>
+            </span>
+
+            <h2 class="mb-4">
+              Aún no realiza los exámenes de admisión o 
+              <span class="text-success">no le dió el corte.</span>
+            </h2>
+
+            <p class="mb-4">
+              Tenemos una sección con un Blog, con cortos, amenos y útiles artículos
+              con valiosas sugerencias al respecto.<br>
+              Así como de otros temas.
+            </p>
+
+            <a href="./help-center.html" class="btn btn-link text-success">
+              leer más...
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feelings Section -->
+    <section id="Feelings" class="section py-12">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Text column -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <h2 class="mb-4">Te suena?</h2>
+            
+            <p class="mb-6">
+              "Hay mil carreras y no sé cuál elegir"<br>
+              "Me da miedo equivocarme y decepcionar a mis papás"<br>
+              "Muchos de mis compas ya saben qué estudiar, ¿por qué yo no?"
+            </p>
+
+            <h2 class="text-success mb-4">
+              Hay un camino probado para apoyar sus decisiones.
+            </h2>
+
+            <p class="mb-4">
+              En Profesión Feliz hemos ayudado a navegar este momento crucial a muchos
+              como él, y lo han hecho sin perder la cabeza (ni sus pasiones)
+            </p>
+          </div>
+
+          <!-- Image column -->
+          <div class="col-12 col-md-6">
+            <div class="img-skewed img-skewed-start mb-6">
+              <img src="assets/img/pf_img/ilust-padres-2c.png" 
+                  class="img-fluid"
+                  data-aos="img-skewed-item-start"
+                  alt="Illustration">
+            </div>
+          </div>
+
+          <h2 class="text-success mt-8">
+            Tu amor por sus sueños merece la mejor guía!
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE de gris a blanco-->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-white">
+        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- Process Section -->
+    <section id="process" class="section py-12 bg-white">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Content column -->
+          <div class="col-12 col-md-7 col-lg-6 order-md-2">
+            <!-- Badge header -->
+            <span class="badge rounded-pill text-bg-success-subtle mb-4">
+              <span class="h6 text-uppercase">Proceso</span>
+            </span>
+
+            <h2 class="mb-6">
+              Nuestro proceso es tan facil 
+              <span class="text-success">como 1,2 y 3</span>.
+            </h2>
+
+            <!-- Steps -->
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <p class="fw-bold mb-1">Paso 1</p>
+                <p class="mb-0">
+                  <strong>Descubriéndose:</strong> Con nuestro enfoque de NeuroTalento, 
+                  conocerá sus fortalezas y habilidades naturales.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <p class="fw-bold mb-1">Paso 2</p>
+                <p class="mb-0">
+                  <strong>Explorando:</strong> Analizamos sus resultados y les presentamos 
+                  carreras que encajan con su perfil.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <p class="fw-bold mb-1">Paso 3</p>
+                <p class="mb-0">
+                  <strong>Decidiendo:</strong> Los acompañamos para que él elija con 
+                  confianza su camino universitario.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image column -->
+          <div class="col-12 col-md-5 col-lg-5 order-md-1" data-aos="fade-up">
+            <div class="w-100 w-md-120 position-relative">
+              <div class="shape shape-blur-4 text-gray-200 position-absolute"></div>
+              <div class="device device-macbook">
+                <img src="assets/img/pf_img/ilust-padres-3.png" class="device-screen" alt="Process illustration">
+                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="Device frame">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURVE de blanco a gris -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M720 0c720 240 1440 240 1440 240h720v240H0V0h720z" fill="currentColor"/></svg>      </div>
+    </div>
+
+
+    <!-- Cost Section -->
+    <section id="cost" class="section py-12">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Text column -->
+          <div class="col-12 col-md-6 col-lg-5">
+            <span class="badge rounded-pill text-bg-success-subtle mb-4">
+              <span class="h6 text-uppercase">costo</span>
+            </span>
+
+            <h2 class="mb-4">
+              Tienes idea de cual es el costo de 1 año perdido? 
+              <span class="text-success">Económica y Emocionalmente!!</span>
+            </h2>
+
+            <p class="mb-6">
+              Comprendiéndolo, le confiarías su FUTURO<br>
+              a un Test de 15 minutos . . . y gratis!!.
+            </p>
+
+            <p class="mb-0">
+              <strong>Nuestro proceso</strong>, si bien FACIL, 
+              es de lo más SERIO que se ofrece hoy en día.
+            </p>
+          </div>
+
+          <!-- Image column -->
+          <div class="col-12 col-md-6">
+            <div class="img-skewed pt-6 mb-6">
+              <img src="assets/img/pf_img/ilust-explor-4.png" 
+                  class="img-fluid" 
+                  alt="Cost illustration">
+            </div>
+          </div>
+
+          <h2 class="text-success mt-8 text-center w-100">
+            Acompañar sus decisiones es también cuidar su futuro.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHAPE de gris a blanco-->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-white">
+        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- Incomprehension Section -->
+    <section id="incomprehension" class="section py-12 bg-gray-100">
+      <div class="container">
+        <!-- Header -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            <span class="badge rounded-pill text-bg-success-subtle mb-4">
+              <span class="h6 text-uppercase">Guía para Padres</span>
+            </span>
+            <h2 class="mb-4">
+              Ayude a su hijo(a) a conocer
+              <span class="text-success">realmente su futura carrera</span>
+            </h2>
+            <p class="lead text-muted mb-3">
+              ¿Sabía que 3 de cada 4 estudiantes eligen su carrera sin conocerla realmente? 🤔
+               </br>No permita que su hijo(a) forme parte de esta estadística.
+            </p>
+            <p class="text-muted mb-8">
+              Le compartimos unos tips fundamentales para apoyar a su hijo(a) (puede ver más detalles en 
+              <a href="#" class="text-success text-decoration-underline">nuestro blog</a>):
+            </p>
+          </div>
+        </div>
+
+        <!-- Tips en dos columnas -->
+        <div class="row justify-content-center mb-8">
+          <!-- Columna izquierda -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">👥</span>
+              <div>
+                <p class="fw-bold mb-1">Facilite el Contacto con Profesionales</p>
+                <p class="text-muted mb-0">
+                  - Contacte a familiares o amigos que trabajen en la carrera de interés<br>
+                  - Pídale que compartan su experiencia real del día a día<br>
+                  - Promueva preguntas sobre desafíos y satisfacciones de la profesión
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">🎓</span>
+              <div>
+                <p class="fw-bold mb-1">Acompáñelo a Visitar Universidades</p>
+                <p class="text-muted mb-0">
+                  - Asistan juntos a ferias vocacionales<br>
+                  - Recorran los laboratorios y espacios de práctica para visualizar el ambiente universitario
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6 mb-md-0">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">📱</span>
+              <div>
+                <p class="fw-bold mb-1">Apoye su Investigación Digital</p>
+                <p class="text-muted mb-0">
+                  - Ayúdele a encontrar grupos serios en redes sociales sobre la carrera<br>
+                  - Revisen juntos perfiles de profesionales exitosos en LinkedIn
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna derecha -->
+          <div class="col-12 col-md-6">
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">👨‍💼</span>
+              <div>
+                <p class="fw-bold mb-1">Gestione Experiencias Profesionales</p>
+                <p class="text-muted mb-0">
+                  - Coordine visitas a lugares de trabajo reales<br>
+                  - Organice un día de observación laboral con algún contacto<br>
+                  - Permítale experimentar el ambiente profesional de primera mano
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">🔍</span>
+              <div>
+                <p class="fw-bold mb-1">Analicen Juntos el Futuro de la Profesión</p>
+                <p class="text-muted mb-0">
+                  - Revisen blogs especializados del sector<br>
+                  - Investiguen las tendencias laborales actuales<br>
+                  - Evalúen las proyecciones salariales y de empleabilidad
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Card -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="card bg-light border-0">
+              <div class="card-body p-5">
+                <p class="fw-bold mb-3">💡 ¿Le preocupa que su hijo(a) tome una decisión sin suficiente información?</p>
+                <p class="text-muted mb-4">
+                  En Profesión Feliz le ayudamos a guiar a su hijo(a) en este proceso crucial. Nuestros expertos facilitan el contacto con profesionales de las carreras de interés (
+                  <a href="#" class="text-success text-decoration-underline">suscríbase aquí</a> 
+                  a nuestras charlas virtuales o mejor aún, 
+                  <a href="#" class="text-success text-decoration-underline">inscriba a un profesional aquí</a> 
+                  para que comparta su experiencia con todos los jóvenes en nuestra lista de espera).
+                </p>
+                <div class="text-center">
+                  <a href="#" class="btn btn-success lift">
+                    Asegure el Futuro de su Hijo(a) Aquí
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section py-12 bg-white">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <!-- Content column -->
+          <div class="col-12 col-md-7 col-lg-6 order-md-2">
+            <span class="badge rounded-pill text-bg-success-subtle mb-4">
+              <span class="h6 text-uppercase">Beneficios</span>
+            </span>
+
+            <h2 class="mb-6">
+              Con Profesión Feliz 
+              <span class="text-success">obtendrás:</span>
+            </h2>
+
+            <!-- Benefits list -->
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1">Claridad mental</h5>
+                <p class="mb-0">Bye bye a las noches sin dormir pensando en tu futuro.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1">Autoconocimiento level pro</h5>
+                <p class="mb-0">Descubre habilidades que ni sabías que tenías.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1">Decisión informada</h5>
+                <p class="mb-0">Elige tu carrera con la seguridad de un experto.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1">Ahorro de tiempo y dinero</h5>
+                <p class="mb-0">Evita cambios de carrera y semestres perdidos.</p>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1">Boost de confianza</h5>
+                <p class="mb-0">Entra a la U sabiendo que estás en el lugar correcto.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image column -->
+          <div class="col-12 col-md-5 col-lg-5 order-md-1" data-aos="fade-up">
+            <div class="w-100 w-md-120 position-relative">
+              <div class="shape shape-blur-4 text-gray-200 position-absolute"></div>
+              <div class="device device-macbook">
+                <img src="assets/img/pf_img/ilust-explor-5.png" class="device-screen" alt="Benefits illustration">
+                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="Device frame">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section py-12">
+      <div class="container">
+        <!-- Section header -->
+        <span class="badge rounded-pill text-bg-success-subtle mb-4">
+          <span class="h6 text-uppercase">Testimonios</span>
+        </span>
+
+        <!-- Testimonials header -->
+        <div class="row justify-content-center mb-8">
+          <h2>
+            Testimonios 
+            <span class="text-success">
+              Sus historias de transformación son nuestra mejor recompensa!
+            </span>
+          </h2>
+        </div>
+
+        <!-- First row of testimonials -->
+        <div class="row justify-content-center mb-8">
+          <!-- First testimonial -->
+          <div class="col-12 col-md">
+            <blockquote class="mb-0">
+              <p class="mb-4">
+                Un proceso realmente útil y productivo, ya concluido observé a mi hija
+                muy ubicada, le reforzó muchísimo su inclinación vocacional, haberlo
+                experimentado con ella fue satisfactorio y enriquecedor.<br>
+                Mil gracias por la dedicación de principio fin durante el proceso.
+              </p>
+              <footer class="mb-0">
+                <p class="mb-0 fw-bold">Elena Soto</p>
+                <p class="mb-0">Administradora de Empresas - Madre</p>
+              </footer>
+            </blockquote>
+          </div>
+
+          <!-- Spacing -->
+          <div class="col-1"></div>
+          <div class="col-1 border-start"></div>
+
+          <!-- Second testimonial -->
+          <div class="col-12 col-md">
+            <blockquote class="mb-0">
+              <p class="mb-4">
+                Don Johnnie y Gabi... quisiera comentarles que mi Hijo Joseph
+                gracias a Dios le está poniendo bonito en la Universidad, y va pero
+                muy-muy, pero muy bien, que son notas de 98-95... ¡Va exageradamente
+                bien!... gracias a Dios... y en realidad, esa es su carrera...
+                quiero que sepan que el sistema de Uds . . . <strong>¡sí funciona!</strong>
+              </p>
+              <footer class="mb-0">
+                <p class="mb-0 fw-bold">David Guevara</p>
+                <p class="mb-0">Ingeniero Eléctrico - Padre</p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Second row of testimonials -->
+        <div class="row justify-content-center mb-8">
+          <div class="col-12 col-md">
+            <blockquote class="mb-0">
+              <p class="mb-4">
+                Definitivamente...vi que cambió su actitud. Hace un tiempo yo lo
+                veía totalmente estancado, bloqueado, decía no sé - no sé, ...Y
+                vieras que ahora de verdad ...con cierta emoción y entusiasmo.
+                Muchísimas gracias, bueno a Diosito porque nos los puso a ustedes en
+                el camino ... Y es que él me decía: Mamá, qué diferencia es hablar
+                con alguien que sabe de verdad, que te muestra diferentes panoramas de
+                las carreras, porque uno solo pensando y viendo programas no ve cosas
+                que ellos ven... y se siente uno motivado... Muchísimas gracias
+                porque el cambio ha sido radical.
+              </p>
+              <footer class="mb-0">
+                <p class="mb-0 fw-bold">Ana I. Jiménez</p>
+                <p class="mb-0">Profesional- Madre</p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Link to more testimonials -->
+        <div class="text-center">
+          <a href="./pf-testimonios.html" class="btn btn-link text-success">
+            ver más testimonios ...
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="section py-12 bg-dark" 
+            style="background-image: url(assets/img/patterns/pattern-1.svg);">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Badge header -->
+            <span class="badge rounded-pill text-bg-gray-700-subtle mb-4">
+              <span class="h6 text-uppercase">Házlo</span>
+            </span>
+
+            <!-- CTA content -->
+            <h1 class="display-4 text-white mb-4">
+              ¿Quieres ver a tu hijo tomar decisiones con seguridad?
+            </h1>
+
+            <p class="text-white mb-8">
+              ¡Contáctanos hoy y dale el regalo del autoconocimiento!
+            </p>
+
+            <!-- CTA button -->
+            <a href="./contact-alt.html" class="btn btn-primary-desat lift">
+              Solicita información
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Shape divider -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-gray-200">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- CURVE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-gray-200">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/></svg>      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="py-8 py-md-11 bg-gray-200">
+      <div class="container">
+        <div class="row">
+    
+          <!-- marca izq -->
+          <div class="col-12 col-md-4 col-lg-4">
+    
+            <!-- Brand -->
+            <!-- Brand <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2">  --> 
+            <h2 class="footer-brand img-fluid mb-2">Profesión Feliz</h2>
+          </div>  <!-- / col 12 marca izq -->
+    
+    
+    
+            <!-- col #2 social  -->
+          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+    
+            <!-- Social -->
+            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item me-3">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/twitter.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+              <li class="list-inline-item list-social-item">
+                <a href="#!" class="text-decoration-none">
+                  <img src="./assets/img/icons/social/pinterest.svg" class="list-social-icon" alt="...">
+                </a>
+              </li>
+            </ul>     
+    
+    
+          </div>
+    
+    
+            <!-- col #3 newsletter   -->      
+            <div class="col-12 col-md-4 col-lg-4">
+    
+              <!-- Text --> 
+             <a href="#!" class="footer-brand img-fluid mb-2">
+               Newsletter signup 
+              </a>
+    
+            </div>  <!-- / col 6 newsl -->
+    
+      
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
+
+  </body>
+</html>
