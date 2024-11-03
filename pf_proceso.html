@@ -439,6 +439,75 @@
         </div>
       </div>
     </div>
+    
+    
+    <!-- det cont -->
+    <div id="modalContactDetail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalContactDetailTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="card-header-title" id="modalContactDetailTitle">
+                Detalle del Contacto
+              </h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="card-body">
+              <!-- Tabs Container -->
+              <div class="contact-detail-tabs">
+                <ul class="nav nav-tabs nav-tabs-sm card-header-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="contactInfo-tab" data-bs-toggle="tab" href="#contactInfo" role="tab" aria-controls="contactInfo" aria-selected="true">
+                      Información
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="interactions-tab" data-bs-toggle="tab" href="#interactions" role="tab" aria-controls="interactions" aria-selected="false">
+                      Interacciones
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="notes-tab" data-bs-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="false">
+                      Notas
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="timeline-tab" data-bs-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="false">
+                      Timeline
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- Content Container -->
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="contactInfo" role="tabpanel">
+                  <!-- Información básica -->
+                  <div class="contact-info mb-4">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="form-label">Nombre</label>
+                          <input type="text" class="form-control" value="" readonly>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="form-label">Email</label>
+                          <input type="email" class="form-control" value="" readonly>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Otros tabs se cargarán dinámicamente -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -472,7 +541,7 @@
               <a class="nav-link" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pf-about.html">Somos</a>
+              <a class="nav-link" href="./pf_about.html">Somos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pf-testimonios.html">Testimonios</a>
@@ -935,8 +1004,7 @@
                 
                 <p class="text-muted mb-4">
                   Administración de Empresas <br>
-                  énfasis en <br> Recursos Humanos <br>
-                  -
+                  énfasis en <br> Recursos Humanos  
                 </p>
 
                 <div class="mb-4">
