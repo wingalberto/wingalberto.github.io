@@ -9,7 +9,146 @@
 <body>
 
       <!-- NAVBAR -->
-      {{> partials/navbar classList="navbar-light" container="container-fluid" button="primary"}}
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+      
+       
+          <!-- Logo -->
+          <!-- <a class="navbar-brand" href="./index.html">  <img class="navbar-brand-img" src="./assets/img/brand.svg" alt="Profesión Feliz">  </a>  -->
+        
+          <!-- Logo -->
+      <a class="navbar-brand" href="./index.html">
+        <img class="navbar-brand-img" 
+             src="./assets/img/pf_img/logopf.png" 
+             alt="Profesión Feliz"
+             style="height: 150px; width: auto;">
+      </a>
+          
+      
+      
+      
+          <!-- Botón hamburguesa para móvil -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <!-- Contenido del menú -->
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <!-- Menú principal -->
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pf_about.html">Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pf-testimonios.html">Testimonios</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" href="./pf_proceso.html">Proceso Exclusivo</a>
+              </li>
+      
+              <!-- Recursos (Dropdown) -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarRecursos" 
+                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Recursos
+                </a>
+                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarRecursos">
+                  <div class="list-group list-group-flush">
+                    <a class="list-group-item" href="./pf_blog-showcase.html">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>                </div>
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">Blog</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Artículos y recursos</p>
+                      </div>
+                    </a>
+      
+                    <a class="list-group-item" href="./pf_preg-frec.html">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle fill="#335EEA" opacity=".3" cx="12" cy="12" r="10"/><path d="M12 16a1 1 0 110 2 1 1 0 010-2zm-1.409-1.132v-1.659h1.26c1.596 0 2.751-1.218 2.751-2.814s-1.155-2.814-2.751-2.814c-1.617 0-2.73 1.218-2.73 2.814H7.336c0-2.52 1.974-4.473 4.515-4.473 2.541 0 4.536 1.953 4.536 4.473 0 2.52-1.995 4.473-4.536 4.473h-1.26z" fill="#335EEA"/></g></svg>                </div>
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">FAQ</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Preguntas frecuentes</p>
+                      </div>
+                    </a>
+      
+                    <!-- mini cursos 
+                    <a class="list-group-item" href="./blog-showcase.html">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M18 8h-2a1 1 0 010-2h2V4a1 1 0 012 0v2h2a1 1 0 010 2h-2v2a1 1 0 01-2 0V8zm-9 3a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M0 20.2C.389 15.426 4.263 13 8.984 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>                </div>
+      
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">Mini-Cursos</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Aprende con nosotros</p>
+                      </div>
+      
+                    </a>
+                    -->
+      
+      
+                  </div>
+                </div>
+              </li>
+          
+              <!-- Contacto (Dropdown) -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarContacto" 
+                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Contacto
+                </a>
+                <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarContacto">
+                  <div class="list-group list-group-flush">
+                    <a class="list-group-item" href="./pf_contacto2.html">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle fill="#335EEA" opacity=".3" cx="12" cy="12" r="10"/><rect fill="#335EEA" x="11" y="10" width="2" height="7" rx="1"/><rect fill="#335EEA" x="11" y="7" width="2" height="2" rx="1"/></g></svg>                </div>
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">Solicita información</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Conoce más sobre nuestros servicios</p>
+                      </div>
+                    </a>
+                    <a class="list-group-item" href="./pf_contacto2.html" data-bs-toggle="modal">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z" fill="#335EEA" opacity=".3"/><path d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z" fill="#335EEA"/></g></svg>                </div>
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">Newsletter SignUp</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Recibe nuestras actualizaciones</p>
+                      </div>
+                    </a>
+                    <a class="list-group-item" href="./pf_contacto2.html">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" x="4" y="16" width="4" height="4" rx="1"/><rect fill="#335EEA" x="4" y="10" width="4" height="4" rx="1"/><rect fill="#335EEA" x="10" y="16" width="4" height="4" rx="1"/><rect fill="#335EEA" opacity=".3" x="10" y="10" width="4" height="4" rx="1"/><rect fill="#335EEA" x="4" y="4" width="4" height="4" rx="1"/><rect fill="#335EEA" x="16" y="16" width="4" height="4" rx="1"/></g></svg>                </div>
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">Charlas Sign Up</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Inscríbete a nuestros eventos</p>
+                      </div>
+                    </a>
+                    <a class="list-group-item" href="./pf_contacto2.html">
+                      <div class="icon icon-sm text-primary">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M18 14a3 3 0 110-6 3 3 0 010 6zm-9-3a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M17.601 15c3.407.038 6.188 1.76 6.397 5.4.009.147 0 .6-.542.6H19.6c0-2.25-.744-4.328-1.999-6zm-17.6 5.2C.388 15.426 4.26 13 8.983 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>   <!--  charlas  devices/display-1  info  communication/sending-mail  -->
+                      </div>
+                      <div class="ms-4">
+                        <h6 class="fw-bold text-uppercase text-primary mb-0">Solicita reunión</h6>
+                        <p class="fs-sm text-gray-700 mb-0">Agenda una cita con nosotros</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          
+            <!-- Botón CTA -->
+            <a class="navbar-btn btn btn-sm btn-success lift ms-auto" href="./pf_contacto2.html">
+              Descubre tu vocación
+            </a>
+          </div>
+          
+      
+        </div>
+      </nav>
 
     
     <!-- Aquí iría el contenido del navbar -->
@@ -107,7 +246,7 @@
                             Explora 
                           </a>
                           
-                          <!--  <a class="dropdown-item" href="{{webRoot}}/desktop-app.html">  Desktop  </a>    -->
+                          <!--  <a class="dropdown-item" href="./desktop-app.html">  Desktop  </a>    -->
                       </div>
                     </div>
 
@@ -136,11 +275,82 @@
 
     <!-- FOOTER -->
     <section class="pt-4 bg-pf-green">
-      {{> partials/footer classList="bg-gray-200 border-top border-gray-800 border-opacity-50"}}
+      <footer class="py-8 py-md-11 bg-gray-200 border-top border-gray-800 border-opacity-50">
+        <div class="container">
+          <div class="row">
+      
+            <!-- marca izq -->
+            <div class="col-12 col-md-4 col-lg-4">
+      
+              <!-- Brand --> 
+              <h2 class="footer-brand img-fluid mb-2">Profesión Feliz</h2>
+            </div>  <!-- / col 12 marca izq -->
+      
+      
+      
+              <!-- col #2 social  -->
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+      
+              <!-- Social -->
+              <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+      
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://www.instagram.com/profesionfeliz/" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Síguenos en Instagram">
+                  </a>
+                </li>
+      
+                <li class="list-inline-item list-social-item me-3">
+                  <a href="https://facebook.com/quecarreraestudiar" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+                    <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Síguenos en Facebook">
+                  </a>
+                 </li>
+      
+              </ul>     
+      
+      
+            </div>
+      
+      
+              <!-- col #3 newsletter   -->      
+              <div class="col-12 col-md-4 col-lg-4">
+      
+                  <!-- Text --> 
+                  <a href="./pf_contacto2.html"  class="btn btn-link text-success"> 
+                    Solicita Información 
+                  </a>
+                 
+      
+      
+              </div>  <!-- / col 6 newsl -->
+      
+              <!-- col #3 WhatsApp   -->      
+              <div class="col-12 col-md-4 col-lg-4">
+       
+                <!-- WhatsApp --> 
+                <h4 class=" mb-3">Movil y WhatsApp</h4>
+                <a href="tel:+50688221234" class="text-reset">
+                  (506) 8822-1234
+                </a>
+       
+      
+            </div>  <!-- / col 6 newsl -->
+      
+        
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </footer>
     </section>
 
     <!-- JAVASCRIPT -->
-    {{> partials/scripts}}
+    <!-- Map JS -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+    
+    <!-- Vendor JS -->
+    <script src="./assets/js/vendor.bundle.js"></script>
+    
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.bundle.js"></script>
 
   </body>
 </html>
