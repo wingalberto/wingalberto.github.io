@@ -1,661 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css">
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css">
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css">
-    
-    <!-- Title -->
-    <title>Landkit</title>
+    {{> partials/head title="Landkit"}}
   </head>
   <body class="bg-light">
 
     <!-- MODALS -->
-    <!-- Example -->
-    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Image -->
-            <div class="text-center">
-              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
-            </div>
-    
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
-    
-            <!-- Text -->
-            <p class="fs-lg text-center text-body-secondary mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
-    
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
-    
-                  <!-- First name -->
-                  <div class="form-floating">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
-    
-                </div>
-                <div class="col-12 col-md-6">
-    
-                  <!-- Last name -->
-                  <div class="form-floating">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
-    
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
-    
-                  <!-- Email -->
-                  <div class="form-floating">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
-    
-                </div>
-                <div class="col-12 col-md-6">
-    
-                  <!-- Password -->
-                  <div class="form-floating">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
-    
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-    
-                  <!-- Submit -->
-                  <button class="btn w-100 btn-primary mt-3 lift">
-                    Request a demo
-                  </button>
-    
-                </div>
-              </div>
-            </form>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signup: Horizontal  -->
-    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
-    
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
-    
-                <!-- Shape -->
-                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
-    
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-    
-                  <!-- Close -->
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-                  <!-- Heading -->
-                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
-                    Sign Up
-                  </h2>
-    
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-body-secondary">
-                    Simplify your workflow in minutes.
-                  </p>
-    
-                  <!-- Form -->
-                  <form class="mb-6">
-    
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
-                    </div>
-    
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
-                        Create a password
-                      </label>
-                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
-                    </div>
-    
-                    <!-- Submit -->
-                    <button class="btn w-100 btn-primary" type="submit">
-                      Sign up
-                    </button>
-    
-                  </form>
-    
-                  <!-- Text -->
-                  <p class="mb-0 fs-sm text-center text-body-secondary">
-                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
-                  </p>
-    
-                </div>
-              </div>
-    
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signup: Vertical  -->
-    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
-    
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
-            </div>
-    
-            <!-- Body -->
-            <div class="card-body">
-    
-              <!-- Heading -->
-              <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
-                Sign Up
-              </h2>
-    
-              <!-- Text -->
-              <p class="mb-6 text-center text-body-secondary">
-                Simplify your workflow in minutes.
-              </p>
-    
-              <!-- Form -->
-              <form class="mb-6">
-    
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="visually-hidden" for="modalSignupVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
-                </div>
-    
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="visually-hidden" for="modalSignupVerticalPassword">
-                    Create a password
-                  </label>
-                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
-                </div>
-    
-                <!-- Submit -->
-                <button class="btn w-100 btn-primary" type="submit">
-                  Sign up
-                </button>
-    
-              </form>
-    
-              <!-- Text -->
-              <p class="mb-0 fs-sm text-center text-body-secondary">
-                Already have an account? <a href="./signin-illustration.html">Log in</a>.
-              </p>
-    
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signin: Horizontal  -->
-    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
-    
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
-    
-                <!-- Shape -->
-                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
-    
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-    
-                  <!-- Close -->
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-                  <!-- Heading -->
-                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
-                    Sign In
-                  </h2>
-    
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-body-secondary">
-                    Simplify your workflow in minutes.
-                  </p>
-    
-                  <!-- Form -->
-                  <form class="mb-6">
-    
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
-                    </div>
-    
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
-                        Enter your password
-                      </label>
-                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
-                    </div>
-    
-                    <!-- Submit -->
-                    <button class="btn w-100 btn-primary" type="submit">
-                      Sign in
-                    </button>
-    
-                  </form>
-    
-                  <!-- Text -->
-                  <p class="mb-0 fs-sm text-center text-body-secondary">
-                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-                  </p>
-    
-                </div>
-              </div>
-    
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signin: Vertical  -->
-    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
-    
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class="shape shape-bottom shape-fluid-x text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
-            </div>
-    
-            <!-- Body -->
-            <div class="card-body">
-    
-              <!-- Heading -->
-              <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
-                Sign In
-              </h2>
-    
-              <!-- Text -->
-              <p class="mb-6 text-center text-body-secondary">
-                Simplify your workflow in minutes.
-              </p>
-    
-              <!-- Form -->
-              <form class="mb-6">
-    
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="visually-hidden" for="modalSigninVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
-                </div>
-    
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="visually-hidden" for="modalSigninVerticalPassword">
-                    Enter your password
-                  </label>
-                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
-                </div>
-    
-                <!-- Submit -->
-                <button class="btn w-100 btn-primary" type="submit">
-                  Sign in
-                </button>
-    
-              </form>
-    
-              <!-- Text -->
-              <p class="mb-0 fs-sm text-center text-body-secondary">
-                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-              </p>
-    
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Payment -->
-    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-    
-            <!-- Close -->
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    
-            <!-- Heading -->
-            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
-              Add Payment
-            </h2>
-    
-            <!-- Text -->
-            <p class="fs-lg text-center text-body-secondary mb-6 mb-md-8">
-              Simplify your workflow in minutes.
-            </p>
-    
-            <!-- Form -->
-            <form>
-    
-              <!-- Name -->
-              <div class="form-group">
-                <label class="form-label" for="modalPaymentName">Name on card</label>
-                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
-              </div>
-    
-              <!-- Name -->
-              <div class="form-group">
-                <label class="form-label" for="modalPaymentNumbber">Card number</label>
-                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
-              </div>
-    
-              <!-- Name -->
-              <div class="form-group">
-                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
-                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
-              </div>
-    
-              <!-- Submit -->
-              <button class="btn w-100 btn-primary mt-3 lift">
-                Add Payment Method
-              </button>
-    
-            </form>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    
-    <!-- det cont -->
-    <div id="modalContactDetail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalContactDetailTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-            <div class="card-header">
-              <h4 class="card-header-title" id="modalContactDetailTitle">
-                Detalle del Contacto
-              </h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="card-body">
-              <!-- Tabs Container -->
-              <div class="contact-detail-tabs">
-                <ul class="nav nav-tabs nav-tabs-sm card-header-tabs" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="contactInfo-tab" data-bs-toggle="tab" href="#contactInfo" role="tab" aria-controls="contactInfo" aria-selected="true">
-                      Información
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="interactions-tab" data-bs-toggle="tab" href="#interactions" role="tab" aria-controls="interactions" aria-selected="false">
-                      Interacciones
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="notes-tab" data-bs-toggle="tab" href="#notes" role="tab" aria-controls="notes" aria-selected="false">
-                      Notas
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="timeline-tab" data-bs-toggle="tab" href="#timeline" role="tab" aria-controls="timeline" aria-selected="false">
-                      Timeline
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              
-              <!-- Content Container -->
-              <div class="tab-content">
-                <div class="tab-pane fade show active" id="contactInfo" role="tabpanel">
-                  <!-- Información básica -->
-                  <div class="contact-info mb-4">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div class="form-group">
-                          <label class="form-label">Nombre</label>
-                          <input type="text" class="form-control" value="" readonly>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <div class="form-group">
-                          <label class="form-label">Email</label>
-                          <input type="email" class="form-control" value="" readonly>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Otros tabs se cargarán dinámicamente -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    {{> partials/modals}}
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-    
-     
-        <!-- Logo -->
-        <!-- <a class="navbar-brand" href="./index.html">  <img class="navbar-brand-img" src="./assets/img/brand.svg" alt="Profesión Feliz">  </a>  -->
-      
-        <!-- Logo -->
-    <a class="navbar-brand" href="./index.html">
-      <img class="navbar-brand-img" 
-           src="./assets/img/logopf.png" 
-           alt="Profesión Feliz"
-           style="height: 150px; width: auto;">
-    </a>
-        
-    
-    
-    
-        <!-- Botón hamburguesa para móvil -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Contenido del menú -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <!-- Menú principal -->
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pf_about.html">Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pf-testimonios.html">Testimonios</a>
-            </li>
-        
-            <li class="nav-item">
-              <a class="nav-link" href="./pf_proceso.html">Proceso Exclusivo</a>
-            </li>
-    
-            <!-- Recursos (Dropdown) -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarRecursos" 
-                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Recursos
-              </a>
-              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarRecursos">
-                <div class="list-group list-group-flush">
-                  <a class="list-group-item" href="./pf_blog-showcase.html">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z" fill="#335EEA" opacity=".3"/><rect fill="#335EEA" x="6" y="11" width="9" height="2" rx="1"/><rect fill="#335EEA" x="6" y="15" width="5" height="2" rx="1"/></g></svg>                </div>
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">Blog</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Artículos y recursos</p>
-                    </div>
-                  </a>
-    
-                  <a class="list-group-item" href="./pf_preg-frec.html">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle fill="#335EEA" opacity=".3" cx="12" cy="12" r="10"/><path d="M12 16a1 1 0 110 2 1 1 0 010-2zm-1.409-1.132v-1.659h1.26c1.596 0 2.751-1.218 2.751-2.814s-1.155-2.814-2.751-2.814c-1.617 0-2.73 1.218-2.73 2.814H7.336c0-2.52 1.974-4.473 4.515-4.473 2.541 0 4.536 1.953 4.536 4.473 0 2.52-1.995 4.473-4.536 4.473h-1.26z" fill="#335EEA"/></g></svg>                </div>
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">FAQ</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Preguntas frecuentes</p>
-                    </div>
-                  </a>
-    
-                  <!-- mini cursos 
-                  <a class="list-group-item" href="./blog-showcase.html">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M18 8h-2a1 1 0 010-2h2V4a1 1 0 012 0v2h2a1 1 0 010 2h-2v2a1 1 0 01-2 0V8zm-9 3a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M0 20.2C.389 15.426 4.263 13 8.984 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>                </div>
-    
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">Mini-Cursos</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Aprende con nosotros</p>
-                    </div>
-    
-                  </a>
-                  -->
-    
-    
-                </div>
-              </div>
-            </li>
-        
-            <!-- Contacto (Dropdown) -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarContacto" 
-                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Contacto
-              </a>
-              <div class="dropdown-menu dropdown-menu-md" aria-labelledby="navbarContacto">
-                <div class="list-group list-group-flush">
-                  <a class="list-group-item" href="./pf_contacto2.html">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><circle fill="#335EEA" opacity=".3" cx="12" cy="12" r="10"/><rect fill="#335EEA" x="11" y="10" width="2" height="7" rx="1"/><rect fill="#335EEA" x="11" y="7" width="2" height="2" rx="1"/></g></svg>                </div>
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">Solicita información</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Conoce más sobre nuestros servicios</p>
-                    </div>
-                  </a>
-                  <a class="list-group-item" href="./pf_contacto2.html" data-bs-toggle="modal">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M6 2h12a1 1 0 011 1v9a1 1 0 01-1 1H6a1 1 0 01-1-1V3a1 1 0 011-1zm1.5 3a.5.5 0 000 1h6a.5.5 0 100-1h-6zm0 2a.5.5 0 000 1h3a.5.5 0 100-1h-3z" fill="#335EEA" opacity=".3"/><path d="M3.793 6.573L12 12.5l8.207-5.927a.5.5 0 01.793.405V17a2 2 0 01-2 2H5a2 2 0 01-2-2V6.978a.5.5 0 01.793-.405z" fill="#335EEA"/></g></svg>                </div>
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">Newsletter SignUp</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Recibe nuestras actualizaciones</p>
-                    </div>
-                  </a>
-                  <a class="list-group-item" href="./pf_contacto2.html">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><rect fill="#335EEA" x="4" y="16" width="4" height="4" rx="1"/><rect fill="#335EEA" x="4" y="10" width="4" height="4" rx="1"/><rect fill="#335EEA" x="10" y="16" width="4" height="4" rx="1"/><rect fill="#335EEA" opacity=".3" x="10" y="10" width="4" height="4" rx="1"/><rect fill="#335EEA" x="4" y="4" width="4" height="4" rx="1"/><rect fill="#335EEA" x="16" y="16" width="4" height="4" rx="1"/></g></svg>                </div>
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">Charlas Sign Up</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Inscríbete a nuestros eventos</p>
-                    </div>
-                  </a>
-                  <a class="list-group-item" href="./pf_contacto2.html">
-                    <div class="icon icon-sm text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M18 14a3 3 0 110-6 3 3 0 010 6zm-9-3a4 4 0 110-8 4 4 0 010 8z" fill="#335EEA" opacity=".3"/><path d="M17.601 15c3.407.038 6.188 1.76 6.397 5.4.009.147 0 .6-.542.6H19.6c0-2.25-.744-4.328-1.999-6zm-17.6 5.2C.388 15.426 4.26 13 8.983 13c4.788 0 8.722 2.293 9.015 7.2.012.195 0 .8-.751.8H.727c-.25 0-.747-.54-.726-.8z" fill="#335EEA"/></g></svg>   <!--  charlas  devices/display-1  info  communication/sending-mail  -->
-                    </div>
-                    <div class="ms-4">
-                      <h6 class="fw-bold text-uppercase text-primary mb-0">Solicita reunión</h6>
-                      <p class="fs-sm text-gray-700 mb-0">Agenda una cita con nosotros</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-        
-          <!-- Botón CTA -->
-          <a class="navbar-btn btn btn-sm btn-success lift ms-auto" href="./pf_contacto2.html">
-            Descubre tu vocación
-          </a>
-        </div>
-        
-    
-      </div>
-    </nav>
+    {{> partials/navbar classList="navbar-light" container="container-fluid" button="primary"}}
 
 
     <!-- Welcome Section -->
     <section id="welcome" class="section position-relative py-12">
       <!-- Shape blur background -->
       <div class="shape shape-fluid-x shape-blur-1 text-gray-200">
-        <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M703.969 241.602l-.006-.003C716.081 262.97 723 287.677 723 314c0 68.917-47.425 126.757-111.42 142.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569 81.26 569 0 487.74 0 387.5c0-34.256 9.49-66.296 25.985-93.633l-.016.008L141.512 77.548C162.753 33.305 207.123 2.273 258.951.12l.008-.12h251.04l.003.01c41.848.557 78.081 24.378 96.356 59.12l.001-.005 97.61 182.477z" fill="currentColor"/></svg>      </div>
+        {{> blurs/blur-1}}
+      </div>
 
       <div class="container">
         <div class="row align-items-center">
@@ -713,7 +75,7 @@
               Estudiantes de 11 nacionalidades han tomado nuestro proceso, realizando estudios en 15 países destino.
             </p>
 
-            <a href="./pf_contacto2.html"class="btn btn-link text-success">
+            <a href="{{webRoot}}/pf_contacto2.html"class="btn btn-link text-success">
               Contáctanos
             </a>
           </div>
@@ -776,7 +138,8 @@
     <!-- SHAPE de gris a blanco-->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x text-white">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+        {{> curves/curve-3}}
+      </div>
     </div>
 
 
@@ -802,7 +165,7 @@
                acordes con la carrera que elija su hija/hijo. Impulsaremos a que él/ella sean protagonistas de su futuro. 
             </p>
 
-            <a href="./pf_contacto2.html"class="btn btn-link text-success">
+            <a href="{{webRoot}}/pf_contacto2.html"class="btn btn-link text-success">
               Contáctanos
             </a>
           </div>
@@ -935,7 +298,8 @@
     <!-- CURVE de blanco a gris -->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x text-light">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M720 0c720 240 1440 240 1440 240h720v240H0V0h720z" fill="currentColor"/></svg>      </div>
+        {{> curves/curve-6}}
+      </div>
     </div>
 
 
@@ -993,7 +357,8 @@
     <!-- SHAPE de gris a blanco-->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x text-white">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+        {{> curves/curve-3}}
+      </div>
     </div>
 
     
@@ -1071,14 +436,14 @@
           <div class="col-12 col-lg-8 text-center">
             <p class="text-muted mb-0">
               Más tips e información clave en
-              <a href="./pf_blog-showcase.html" class="text-success text-decoration-underline">nuestro blog</a>
+              <a href="{{webRoot}}/pf_blog-showcase.html" class="text-success text-decoration-underline">nuestro blog</a>
               y en nuestras redes
               <span class="d-inline-flex align-items-center ms-2">
                 <a href="https://www.instagram.com/profesionfeliz/" class="text-decoration-none me-3" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Síguenos en Instagram">
+                  <img src="{{webRoot}}/assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Síguenos en Instagram">
                 </a>
                 <a href="https://facebook.com/quecarreraestudiar" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Síguenos en Facebook">
+                  <img src="{{webRoot}}/assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Síguenos en Facebook">
                 </a>
               </span>
             </p>
@@ -1091,7 +456,8 @@
     <!-- CURVE de blanco a gris -->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x text-light">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M720 0c720 240 1440 240 1440 240h720v240H0V0h720z" fill="currentColor"/></svg>      </div>
+        {{> curves/curve-6}}
+      </div>
     </div>
 
 
@@ -1179,7 +545,8 @@
     <!-- SHAPE de gris a blanco-->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x text-white">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+        {{> curves/curve-3}}
+      </div>
     </div>
 
  
@@ -1327,7 +694,7 @@
         <!-- CTA -->
         <div class="row justify-content-center">
           <div class="pb-8 col-12 text-center">
-            <a href="./pf-testimonios.html" class="btn btn-success-subtle lift">
+            <a href="{{webRoot}}/pf-testimonios.html" class="btn btn-success-subtle lift">
               más testimonios...
               <i class="fe fe-arrow-right ms-2"></i>
             </a>
@@ -1341,92 +708,16 @@
     <!-- SHAPE de gris a blanco-->
     <div class="position-relative">
       <div class="shape shape-bottom shape-fluid-x text-white">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+        {{> curves/curve-3}}
+      </div>
     </div>
 
 
     <!-- FOOTER -->
-    <footer class="py-8 py-md-11 bg-gray-200">
-      <div class="container">
-        <div class="row">
-    
-          <!-- marca izq -->
-          <div class="col-12 col-md-4 col-lg-4">
-    
-            <!-- Brand --> 
-            <h2 class="footer-brand img-fluid mb-2">Profesión Feliz</h2>
-          </div>  <!-- / col 12 marca izq -->
-    
-    
-    
-            <!-- col #2 social  -->
-          <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
-    
-            <!-- Social -->
-            <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
-    
-              <li class="list-inline-item list-social-item me-3">
-                <a href="https://www.instagram.com/profesionfeliz/" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/icons/social/instagram.svg" class="list-social-icon" alt="Síguenos en Instagram">
-                </a>
-              </li>
-    
-              <li class="list-inline-item list-social-item me-3">
-                <a href="https://facebook.com/quecarreraestudiar" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
-                  <img src="./assets/img/icons/social/facebook.svg" class="list-social-icon" alt="Síguenos en Facebook">
-                </a>
-               </li>
-    
-            </ul>     
-    
-    
-          </div>
-    
-    
-            <!-- col #3 newsletter   -->      
-            <div class="col-12 col-md-4 col-lg-4">
-    
-                <!-- Text --> 
-                <a href="./pf_contacto2.html"  class="btn btn-link text-success"> 
-                  Solicita Información 
-                </a>
-               
-    
-    
-            </div>  <!-- / col 6 newsl -->
-    
-            <!-- col #3 WhatsApp   -->      
-            <div class="col-12 col-md-4 col-lg-4">
-     
-              <!-- WhatsApp --> 
-              <h4 class=" mb-3">Movil y WhatsApp</h4>
-              <a href="tel:+50688221234" class="text-reset">
-                (506) 8822-1234
-              </a>
-     
-    
-          </div>  <!-- / col 6 newsl -->
-    
-      
-        </div> <!-- / .row -->
-      </div> <!-- / .container -->
-    </footer>
+    {{> partials/footer classList="bg-gray-200"}}
 
     <!-- JAVASCRIPT -->
-    
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Bootstrap Bundle JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Supabase Client -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
+    {{> partials/scripts}}
+
   </body>
 </html>
