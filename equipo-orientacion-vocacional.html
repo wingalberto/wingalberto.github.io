@@ -41,30 +41,47 @@
   <!-- Schema.org markup -->
   <script type="application/ld+json">
   {
-      "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
-      "name": "Profesión Feliz",
-      "description": "Servicio profesional de orientación vocacional",
-      "url": "https://profesionfeliz.com",
-      "logo": "https://profesionfeliz.com/assets/img/pf_img/logopf.png",
-      "sameAs": [
-          "https://www.facebook.com/profesionfeliz",
-          "https://www.instagram.com/profesionfeliz"
-      ],
-      "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "CR"
-      }
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Profesión Feliz",
+    "description": "Servicio profesional de orientación vocacional",
+    "url": "https://profesionfeliz.com",
+    "logo": "https://profesionfeliz.com/assets/img/pf_img/logopf.png",
+    "sameAs": [
+      "https://www.facebook.com/profesionfeliz",
+      "https://www.instagram.com/profesionfeliz"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CR"
+    }
   }
   </script>
   
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX'); // Reemplazar con tu ID de GA4
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); // GA4
+  </script>
+  
+  <!-- Google Ads Conversion Tracking -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    
+    // Configuración base de Google Ads
+    gtag('config', '16777250514');
+    
+    // Tracking de conversión para vista de página
+    gtag('event', 'conversion', {
+      'send_to': 'AW-CONVERSION_ID/9kX6CK3TtuoZENKNgsA-',
+      'page_path': window.location.pathname
+    });
   </script>
     <!-- antes  <!-- Required meta tags -->
 <meta charset="utf-8">
@@ -93,30 +110,47 @@
 <!-- Schema.org markup -->
 <script type="application/ld+json">
 {
-    "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
-    "name": "Profesión Feliz",
-    "description": "Servicio profesional de orientación vocacional",
-    "url": "https://profesionfeliz.com",
-    "logo": "https://profesionfeliz.com/assets/img/pf_img/logopf.png",
-    "sameAs": [
-        "https://www.facebook.com/profesionfeliz",
-        "https://www.instagram.com/profesionfeliz"
-    ],
-    "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "CR"
-    }
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Profesión Feliz",
+  "description": "Servicio profesional de orientación vocacional",
+  "url": "https://profesionfeliz.com",
+  "logo": "https://profesionfeliz.com/assets/img/pf_img/logopf.png",
+  "sameAs": [
+    "https://www.facebook.com/profesionfeliz",
+    "https://www.instagram.com/profesionfeliz"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "CR"
+  }
 }
 </script>
 
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); // Reemplazar con tu ID de GA4
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX'); // GA4
+</script>
+
+<!-- Google Ads Conversion Tracking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  // Configuración base de Google Ads
+  gtag('config', '16777250514');
+  
+  // Tracking de conversión para vista de página
+  gtag('event', 'conversion', {
+    'send_to': 'AW-CONVERSION_ID/9kX6CK3TtuoZENKNgsA-',
+    'page_path': window.location.pathname
+  });
 </script>
   -->
 </head>
