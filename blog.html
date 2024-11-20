@@ -58,19 +58,25 @@
     }
     </script>
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    
+    <!-- Google Ads Conversion Tracking -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16777250514"> </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX'); // GA4
+      
+      // Configuración base de Google Ads
+      gtag('config', 'AW-16777250514');
+      
+      // Tracking de conversión para vista de página
+      gtag('event', 'conversion', {
+        'send_to': 'AW-CONVERSION_ID/9kX6CK3TtuoZENKNgsA-',
+        'page_path': window.location.pathname
+      });
     </script>
     
-    <!-- Google Ads Conversion Tracking -->
-
     
-     
   </head>
   <body class="bg-light">
 
@@ -313,32 +319,7 @@
                         </div>
                     </div>
     
-                    <!-- Card with overlay becas
-                    <div class="card card-row shadow-light-lg bg-cover overlay overlay-dark overlay-80 text-white mb-6" style="background-image: url(assets/img/photos-blog/cover-8.jpg);">
-                        <div class="row gx-0">
-                            <div class="col-12 col-md-6">
-                                <div class="card-body">
-                                    <h3>Estudiar en el extranjero: Tu guía paso a paso</h3>
-                                    <p class="mb-0">
-                                        Desde la elección del país y universidad hasta los trámites de visa y becas. Incluye testimonios de estudiantes que ya dieron el paso, consejos para el manejo del presupuesto y estrategias para adaptarte a una nueva cultura.
-                                    </p>
-                                    <div class="card-meta mt-auto">
-                                        <hr class="card-meta-divider">
-                                        <div class="avatar avatar-sm me-2">
-                                            <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                                        </div>
-                                        <h6 class="text-uppercase text-white text-opacity-80 me-2 mb-0">
-                                            Johnnie Ching
-                                        </h6>
-                                        <p class="h6 text-uppercase text-white text-opacity-80 mb-0 ms-auto">
-                                            Mayo 02
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-     -->
+
 
                     <!-- Gradient overlay card -->
                     <div class="card card-row shadow-light-lg bg-cover overlay overlay-gradient-dark-end overlay-60 text-white mb-6" style="background-image: url(assets/img/photos-blog/photo-30.jpg);">
@@ -413,28 +394,7 @@
                     </div>
                 </div>
     
-                <!-- Three column cards -->
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 d-flex">
-                        <div class="card shadow-light-lg mb-6 mb-lg-0">
-                            <div class="card-body">
-                                <h3>Becas y financiamiento: Todas tus opciones</h3>
-                                <p class="mb-0">
-                                    Una guía completa sobre las diferentes opciones para financiar tus estudios, desde becas gubernamentales hasta programas de intercambio y préstamos estudiantiles.
-                                </p>
-                                <div class="card-meta mt-auto">
-                                    <hr class="card-meta-divider">
-                                    <div class="avatar avatar-sm me-2">
-                                        <img src="assets/img/avatars/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                                    </div>
-                                    <h6 class="text-uppercase text-body-secondary me-2 mb-0">
-                                        Johnnie Ching
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
