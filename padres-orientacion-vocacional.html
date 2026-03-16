@@ -70,11 +70,7 @@
       // Configuración base de Google Ads
       gtag('config', 'AW-16777250514');
       
-      // Tracking de conversión para vista de página
-      gtag('event', 'conversion', {
-        'send_to': 'AW-CONVERSION_ID/9kX6CK3TtuoZENKNgsA-',
-        'page_path': window.location.pathname
-      });
+      // Nota: el tracking de conversión se dispara solo en el submit exitoso del formulario
     </script>
     
     
@@ -93,7 +89,7 @@
       <img class="navbar-brand-img" 
            src="./assets/img/pf_img/logopf.png" 
            alt="Profesión Feliz"
-           style="height: 150px; width: auto;">
+           style="height: 50px; width: auto;">
     </a>
         
     
@@ -117,7 +113,7 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="./equipo-orientacion-vocacional.html">Somos</a>
+              <a class="nav-link" href="./equipo-orientacion-vocacional.html">Nuestro Equipo</a>
             </li>
     
             <li class="nav-item">
@@ -221,7 +217,7 @@
 
 
     <!-- Welcome Section -->
-    <section id="welcome" class="section position-relative py-12">
+    <section id="welcome" class="section position-relative py-10">
       <!-- Shape blur background -->
       <div class="shape shape-fluid-x shape-blur-1 text-gray-200">
         <svg viewBox="0 0 723 569" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M703.969 241.602l-.006-.003C716.081 262.97 723 287.677 723 314c0 68.917-47.425 126.757-111.42 142.665L246.7 556.937C226.465 564.729 204.481 569 181.5 569 81.26 569 0 487.74 0 387.5c0-34.256 9.49-66.296 25.985-93.633l-.016.008L141.512 77.548C162.753 33.305 207.123 2.273 258.951.12l.008-.12h251.04l.003.01c41.848.557 78.081 24.378 96.356 59.12l.001-.005 97.61 182.477z" fill="currentColor"/></svg>      </div>
@@ -250,9 +246,8 @@
             </h3>
             
 
-            <h3 class="mb-4">Sabemos cómo acompañarlos...<br>
-              Elegir carrera pasa por autoconocerse y lograr conexión consigo mismo.
-              La confianza y seguridad personal, brindará la fuerza y el enfoque para decidir por la carrera que le <strong> haga feliz </strong> <br> </h3>
+            <h3 class="mb-4">Sabemos cómo acompañarlo...<br>
+              Elegir carrera pasa por autoconocerse y lograr conexión consigo mismo.  </h3>
 
 
           </div>
@@ -260,36 +255,58 @@
       </div>
     </section>
 
-
-    <!-- university Section -->
-    <section id="university" class="section py-6">
+  
+    <!-- Cost Section -->
+    <section id="cost" class="section py-8">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
+        <div class="row align-items-center justify-content-between">
+
+          <!-- Text column -->
+          <div class="col-12 col-md-6 col-lg-5 ">
             <span class="badge rounded-pill text-bg-success mb-4">
-              <span class="h6 text-uppercase">Universidad</span>
+              <span class="h6 text-uppercase">Impacto</span>
             </span>
 
             <h2 class="mb-4">
-              Proyectan ir a la Universidad Pública o Privada,  
-              <span class="text-success">¿o planean estudiar fuera del país?</span>
+              ¿Cuál es el costo de un año perdido?<br>
+              <span class="text-success">A nivel económico y... <br> a nivel emocional</span>
             </h2>
 
-
-            <p class="mb-4">
-              Nuestro proceso exclusivo permite contrastar su perfil con cualquier carrera del país, de universidad pública o privada,
-              o de cualquier universidad del mundo<sup>*</sup> previamente elegida por vos.
-              Estudiantes de 11 nacionalidades han tomado nuestro proceso, realizando estudios en 15 países destino.
+            <p class="mb-6">
+              En todas estas situaciones existe ese riesgo:<br>
+              ► ingresar a una universidad pública  <br>
+              &nbsp;&nbsp;&nbsp;- con lo complejo que es ser admitido en carrera-<br>
+              ► ingresar a una universidad privada <br>
+              &nbsp;&nbsp;&nbsp;- con el alto costo que implica, según carrera-<br>
+              ► deseos de estudiar en una universidad del exterior<br>
+              &nbsp;&nbsp;&nbsp;- con un costo más elevado- 
             </p>
 
-            <a href="./contacto.html"class="btn btn-link text-success">
-              Contáctanos
-            </a>
           </div>
+
+          <!-- Image column -->
+          <div class="col-12 col-md-6">
+
+            <div class="img-skewed pt-6 mb-6">
+              <img src="assets/img/pf_img/ilust-explor-4.png" 
+                  class="img-fluid" 
+                  alt="Cost illustration">
+            </div>
+
+
+            <p class="mb-4 text-center">
+              Tomar  <strong>Nuestro proceso</strong>, se hace necesario.
+            </p>
+
+          </div>
+
+          <h2 class="text-success mt-8 text-center w-100">
+            Asegure su inversión.
+          </h2>
         </div>
       </div>
     </section>
-
+  
 
     <!-- Feelings Section -->
     <section id="Feelings" class="section py-8">
@@ -349,20 +366,257 @@
     </div>
 
 
-    <!-- disrupt Section -->
-    <section id="disrupt" class="section py-8  bg-white ">
+    <!-- Process Section -->
+    <section id="process" class="section py-10 bg-white">
+      <div class="container">
+
+        <div class="row align-items-center justify-content-between">
+
+          <!-- Image column -->
+          <div class="col-12 col-md-5 col-lg-5 order-1 order-md-1 order-lg-1" data-aos="fade-up">
+
+            <h2 class="mb-6 text-center">
+              Un proceso completo en <br>
+              <span class="text-success">4 fases</span>.
+            </h2>
+
+
+
+            <div class="img-skewed pt-6 mb-6">
+              <img src="assets/img/pf_img/ilus-proceso-4fases.png" 
+                  class="img-fluid" 
+                  alt="Cost illustration">
+            </div>
+
+            <h3 class="mb-8 text-center">
+              Modalidad virtual 100%, o un mix:  presencial + virtual
+  
+            </h3>
+
+          </div>
+
+          <!-- Content column -->
+          <div class="col-12 col-md-7 col-lg-6 order-2 order-md-2 order-lg-2 pb-8">
+            <!-- Badge header -->
+            <span class="badge rounded-pill text-bg-success mb-4">
+              <span class="h6 text-uppercase">Proceso</span>
+            </span>
+
+            <!-- Fases -->
+            
+              <!-- Item 1 -->
+              <div class="d-flex mb-6">
+                <div>
+                  <div class="d-flex">
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-success">
+                      Fase 1
+                    </p>
+                  </div>
+  
+                  <p class="mb-0">
+                    <strong>CONOCERLES A DETALLE:</strong> Escucharles a usted(es) como padres  -Escucharle a ella/él como centro del proceso  
+                    -Conocerle detenidamente.
+                  </p>
+
+                </div>
+              </div>
+
+              <!-- Item 2-->
+              <div class="d-flex mb-6">
+                <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+                <div>
+                  <div class="d-flex">
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-success">
+                      Fase 2
+                    </p>
+
+                  </div>
+
+                  <p class="mb-0">
+                    <strong>MEDICIÓN CIENTÍFICA:</strong> -Batería de pruebas (habilidades, intereses, personalidad, neurotalento, otras)  
+                    -Ejercicios preliminares. 
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Item 3-->
+              <div class="d-flex mb-6">
+                <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+                <div>
+                  <div class="d-flex">
+
+                    <!-- Check -->
+                    <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
+                      <i class="fe fe-check"></i>
+                    </div>
+
+                    <!-- Text -->
+                    <p class="text-success">
+                      Fase 3
+                    </p>
+
+                  </div>
+
+                  <p class="mb-0">
+                    <strong>ENTREGA DE RESULTADOS:</strong> Revisar el contenido y los resultados.  
+                    Ejercicios de validación.  Un primer acercamiento a las carreras afines a tu perfil.-Contenidos de c/test  -Ejercicios de validación  
+                    -Revisión de los resultados con enfoque Neurotalento -Acercamiento a carreras afines a su perfil. 
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Item 4-->
+              <div class="d-flex">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+
+                <div class="d-flex">
+
+                  <!-- Check -->
+                  <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
+                    <i class="fe fe-check"></i>
+                  </div>
+
+                  <!-- Text -->
+                  <p class="text-success">
+                    Fase 4
+                  </p>
+
+                </div>
+
+                <p class="mb-0">
+                  <strong>ACOMPAÑAMIENTO Y DECISIONES:</strong> -Revisión a detalle de carreras afines -Mercado laboral -Salarios - Empleabilidad -Toma de decisiones (carrera, universidad, país)
+                   -Plan A,B,C -Entrevistar profesionales -Tendencias del futuro
+                </p>
+              </div>
+              </div>
+
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CURVE de blanco a gris -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-light">
+        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M720 0c720 240 1440 240 1440 240h720v240H0V0h720z" fill="currentColor"/></svg>      </div>
+    </div>
+
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="section py-8 ">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+
+
+          <!-- Image column -->
+          <div class="col-12 col-md-5 col-lg-5 order-md-2" data-aos="fade-up">
+
+
+            <h2 class="mb-6">
+              Con Profesión Feliz 
+              <span class="text-success">obtendrás:</span>
+            </h2>
+
+
+            <div class="w-100 w-md-120 position-relative">
+              <div class="shape shape-blur-4 text-gray-200 position-absolute"></div>
+              <div class="device device-macbook">
+                <img src="assets/img/pf_img/ilust-explor-5.png" class="device-screen" alt="Benefits illustration">
+                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="Device frame">
+              </div>
+            </div>
+          </div>
+      
+
+
+          <!-- Content column -->
+          <div class="col-12 col-md-7 col-lg-6 order-md-1">
+            
+            <span class="badge rounded-pill text-bg-success mb-4">
+              <span class="h6 text-uppercase">Beneficios</span>
+            </span>
+
+            <!-- Benefits list -->
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1">  <strong> Seguridad y confianza </strong>  </h5>
+                <p class="mb-0">La fuerza para alcanzar su sentido de éxito.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1"> <strong> Autoconocimiento desde varias perspectivas</strong> </h5>
+                <p class="mb-0">Validarse, reconocerse, y luego enfocarse</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1"><strong>Claridad para tomar la decisión </strong>  </h5>
+                <p class="mb-0">Disponer de criterios sólidos para elegir.</p>
+              </div>
+            </div>
+
+            <div class="d-flex mb-6">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1"> <strong>Ahorro de tiempo y dinero </strong>  </h5>
+                <p class="mb-0">Evitar equivocarse, cambios de carrera, perder semestres.</p>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
+              <div>
+                <h5 class="mb-1"> <strong>Verlo/verla feliz </strong> </h5>
+                <p class="mb-0">La tranquilidad de haber hecho lo que estuvo a su alcance.</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- disrupt IA Section -->
+    <section id="disrupt" class="section py-8 ">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <span class="badge rounded-pill text-bg-success mb-4">
-              <span class="h6 text-uppercase">Tendencias</span>
+              <span class="h6 text-uppercase">Tendencias del Futuro</span>
             </span>
 
             <h2 class="mb-4">
-              Contemplar en la elección de carrera, las disruptivas  
-              <span class="text-success"> tendencias del futuro  </span>
+              Le preocupa que la inteligencia artificial AI 
+              <span class="text-success"> amenace la profesión de su hija/hijo </span>
             </h2>
-
 
 
             <p class="mb-4">
@@ -379,124 +633,38 @@
       </div>
     </section>
 
+    
+    <!-- SHAPE de gris a blanco-->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x text-white">
+        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
+    </div>
 
-    <!-- Process Section -->
-    <section id="process" class="section py-10 bg-white">
+
+    <!-- university Section -->
+    <section id="university" class="section py-6  bg-white ">
       <div class="container">
-        <div class="row align-items-center justify-content-between">
-
-          <!-- Image column -->
-          <div class="col-12 col-md-5 col-lg-5 order-1 order-md-1 order-lg-1" data-aos="fade-up">
-
-            <h2 class="mb-6">
-              Nuestro proceso es tan fácil <br>
-              <span class="text-success">como 1, 2 y 3</span>.
-            </h2>
-
-            <div class="w-100 w-md-120 position-relative">
-              <div class="shape shape-blur-4 text-gray-200 position-absolute"></div>
-              <div class="device device-macbook">
-                <img src="assets/img/pf_img/ilust-padres-3.png" class="device-screen" alt="Process illustration">
-                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="Device frame">
-              </div>
-            </div>
-
-            <h3 class="mb-6 text-center">
-              de 5 a 8 Sesiones Virtuales,<br> o en un mix Presencial<sup>*</sup>.  
-            </h3>
-
-          </div>
-
-          <!-- Content column -->
-          <div class="col-12 col-md-7 col-lg-6 order-2 order-md-2 order-lg-2 pb-8">
-            <!-- Badge header -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
             <span class="badge rounded-pill text-bg-success mb-4">
-              <span class="h6 text-uppercase">Proceso</span>
+              <span class="h6 text-uppercase">Universidad</span>
             </span>
 
-            <!-- Steps -->
-            <div class="d-flex mb-6">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-
-                <!-- Item 1-->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="text-success">
-                    Fase 1
-                  </p>
-
-                </div>
- 
-                <p class="mb-0">
-                  <strong>CONOCERLE:</strong> Escucharles a usted(es) y a ella/él. - Conocerle detenidamente.  
-                   - Batería de pruebas (habilidades, intereses, personalidad, dominancia cerebral, otras).
-                </p>
-
-              </div>
-            </div>
-
-            <div class="d-flex mb-6">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-                             
-                <!-- Item 2-->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="text-success">
-                    Fase 2
-                  </p>
-
-                </div>
+            <h2 class="mb-4">
+              Si valoran ingresar a la U. pública, privada, o del exterior . . .  
+              <span class="text-success">podrán elegir carrera, cualquiera sea el caso</span>
+            </h2>
 
 
-                <p class="mb-0">
-                  <strong>ENTREGA DE RESULTADOS:</strong> Revisar el contenido y los resultados.  
-                  Ejercicios de validación.  Un primer acercamiento a las carreras afines a tu perfil. 
-                </p>
-              </div>
-            </div>
+            <p class="mb-4">
+              Nuestro proceso exclusivo permite contrastar su perfil con cualquier carrera del país, de universidad pública o privada, 
+              o de cualquier universidad del mundo*, previamente elegida por Uds. Estudiantes de 15 nacionalidades han tomado nuestro proceso, y realizan estudios en 12 países destino.
+            </p>
 
-            <div class="d-flex">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-
-                <!-- Item 3-->
-                <div class="d-flex">
-
-                  <!-- Check -->
-                  <div class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4">
-                    <i class="fe fe-check"></i>
-                  </div>
-
-                  <!-- Text -->
-                  <p class="text-success">
-                    Fase 3
-                  </p>
-
-                </div>
-
-                <p class="mb-0">
-                  <strong>EXPLORAR Y DECIDIR:</strong> Verificar: - Sus carreras afines.  - Mercado laboral.  - Salarios - Empleabilidad.
-                   - Toma de decisiones (carrera, universidad, país).  - Plan A,B,C.  - Entrevistar profesionales.  - Tendencias del futuro.
-                </p>
-              </div>
-            </div>
+            <a href="./contacto.html"class="btn btn-link text-success">
+              Contáctanos
+            </a>
           </div>
-
-
         </div>
       </div>
     </section>
@@ -508,67 +676,8 @@
         <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M720 0c720 240 1440 240 1440 240h720v240H0V0h720z" fill="currentColor"/></svg>      </div>
     </div>
 
-
-    <!-- Cost Section -->
-    <section id="cost" class="section py-10">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-
-          <!-- Text column -->
-          <div class="col-12 col-md-6 col-lg-5 ">
-            <span class="badge rounded-pill text-bg-success mb-4">
-              <span class="h6 text-uppercase">Impacto</span>
-            </span>
-
-            <h2 class="mb-4">
-              ¿Cuál es el costo de un año perdido?<br>
-              <span class="text-success">A nivel económico y... <br> a nivel emocional</span>
-            </h2>
-
-            <p class="mb-6">
-              En todas estas situaciones existe ese riesgo:<br>
-              ► ingresar a una universidad pública  <br>
-              &nbsp;&nbsp;&nbsp;- con lo complejo que es ser admitido en carrera-<br>
-              ► ingresar a una universidad privada <br>
-              &nbsp;&nbsp;&nbsp;- con el alto costo que implica, según carrera-<br>
-              ► deseos de estudiar en una universidad del exterior<br>
-              &nbsp;&nbsp;&nbsp;- con un costo más elevado- 
-            </p>
-
-          </div>
-
-          <!-- Image column -->
-          <div class="col-12 col-md-6">
-
-            <div class="img-skewed pt-6 mb-6">
-              <img src="assets/img/pf_img/ilust-explor-4.png" 
-                  class="img-fluid" 
-                  alt="Cost illustration">
-            </div>
-
-
-            <p class="mb-4 text-center">
-              Tomar  <strong>Nuestro proceso</strong>, se hace necesario.
-            </p>
-
-          </div>
-
-          <h2 class="text-success mt-8 text-center w-100">
-            Asegure su inversión.
-          </h2>
-        </div>
-      </div>
-    </section>
-
-    <!-- SHAPE de gris a blanco-->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x text-white">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>      </div>
-    </div>
-
-    
     <!-- Incomprehension Section -->
-    <section id="incomprehension" class="section py-10 bg-white">
+    <section id="incomprehension" class="section py-10">
       <div class="container">
         <!-- Header -->
         <div class="row justify-content-center mb-8">
@@ -658,93 +767,8 @@
       </div>
     </section>
 
-    <!-- CURVE de blanco a gris -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x text-light">
-        <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M720 0c720 240 1440 240 1440 240h720v240H0V0h720z" fill="currentColor"/></svg>      </div>
-    </div>
 
 
-    <!-- Benefits Section -->
-    <section id="benefits" class="section py-12 ">
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-
-
-          <!-- Image column -->
-          <div class="col-12 col-md-5 col-lg-5 order-md-1" data-aos="fade-up">
-
-            <span class="badge rounded-pill text-bg-success mb-4">
-              <span class="h6 text-uppercase">Beneficios</span>
-            </span>
-
-            <h2 class="mb-6">
-              Con Profesión Feliz 
-              <span class="text-success">obtendrás:</span>
-            </h2>
-
-
-            <div class="w-100 w-md-120 position-relative">
-              <div class="shape shape-blur-4 text-gray-200 position-absolute"></div>
-              <div class="device device-macbook">
-                <img src="assets/img/pf_img/ilust-explor-5.png" class="device-screen" alt="Benefits illustration">
-                <img src="assets/img/devices/macbook.svg" class="img-fluid" alt="Device frame">
-              </div>
-            </div>
-          </div>
-      
-
-
-          <!-- Content column -->
-          <div class="col-12 col-md-7 col-lg-6 order-md-2">
-            
-
-            <!-- Benefits list -->
-            <div class="d-flex mb-6">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-                <h5 class="mb-1">  <strong> Seguridad y confianza </strong>  </h5>
-                <p class="mb-0">La fuerza para alcanzar su sentido de éxito.</p>
-              </div>
-            </div>
-
-            <div class="d-flex mb-6">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-                <h5 class="mb-1"> <strong> Autoconocimiento desde varias perspectivas</strong> </h5>
-                <p class="mb-0">Validarse, reconocerse, y luego enfocarse</p>
-              </div>
-            </div>
-
-            <div class="d-flex mb-6">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-                <h5 class="mb-1"><strong>Claridad para tomar la decisión </strong>  </h5>
-                <p class="mb-0">Disponer de criterios sólidos para elegir.</p>
-              </div>
-            </div>
-
-            <div class="d-flex mb-6">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-                <h5 class="mb-1"> <strong>Ahorro de tiempo y dinero </strong>  </h5>
-                <p class="mb-0">Evitar equivocarse, cambios de carrera, perder semestres.</p>
-              </div>
-            </div>
-
-            <div class="d-flex">
-              <span class="badge badge-rounded-circle text-bg-success-subtle mt-1 me-4"></span>
-              <div>
-                <h5 class="mb-1"> <strong>Verlo/verla feliz </strong> </h5>
-                <p class="mb-0">La tranquilidad de haber hecho lo que estuvo a su alcance.</p>
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </section>
 
     <!-- SHAPE de gris a blanco-->
     <div class="position-relative">
@@ -785,7 +809,7 @@
               <div class="card-body pt-0">
                 <h3 class="fw-bold mb-2">Testimonio desde Beijing</h3>
                 <p class="text-muted">
-                  Una estudiante más, FELIZ, que disfruta su carrera en China, así como otros estudiantes en 12 países.
+                  Una estudiante más, feliz, aplicada en su carrera en China, tras recibir ofertas de beca de 3 universidades de ese país.
                 </p>
               </div>
             </div>
@@ -981,6 +1005,40 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </footer>
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/50688221234?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20la%20orientaci%C3%B3n%20vocacional"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contáctanos por WhatsApp">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+    
+    <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background-color: #25D366;
+      border-radius: 50%;
+      width: 56px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.55);
+    }
+    </style>
 
     <!-- JAVASCRIPT -->
     <!-- Map JS -->

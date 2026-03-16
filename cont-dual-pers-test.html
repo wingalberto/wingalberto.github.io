@@ -45,14 +45,6 @@
   }
   </script>
   
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX'); // GA4
-  </script>
   
   <!-- Google Ads Conversion Tracking -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16777250514"> </script>
@@ -64,14 +56,10 @@
     // Configuración base de Google Ads
     gtag('config', 'AW-16777250514');
     
-    // Tracking de conversión para vista de página
-    gtag('event', 'conversion', {
-      'send_to': 'AW-CONVERSION_ID/9kX6CK3TtuoZENKNgsA-',
-      'page_path': window.location.pathname
-    });
+    // Nota: el tracking de conversión se dispara solo en el submit exitoso del formulario
   </script>
   
-   
+  
 </head>
 <body>
   
@@ -87,7 +75,7 @@
       <img class="navbar-brand-img" 
            src="./assets/img/pf_img/logopf.png" 
            alt="Profesión Feliz"
-           style="height: 150px; width: auto;">
+           style="height: 50px; width: auto;">
     </a>
         
     
@@ -111,7 +99,7 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link" href="./equipo-orientacion-vocacional.html">Somos</a>
+              <a class="nav-link" href="./equipo-orientacion-vocacional.html">Nuestro Equipo</a>
             </li>
     
             <li class="nav-item">
